@@ -33,3 +33,23 @@ So the DM Producer uses the MSGS wavetable synth as well. But:
 - It allows custom sample rate
 
 And most importantly: it doesn't verify the `msyn` chunk!
+
+### Step by step
+
+1. Make sure that you're on a 64-bit system. This is important
+2. Make sure that you're on Windows (duh)
+3. Grab DirectMusic Producer from *somewhere*
+4. Get your SF2/DLS file of choice (I recommend LiveHQ Natural SoundFont GM.sf2)
+5. If it's an SF2, convert it to DLS using SpessaSynth (load -> load any demo song -> Save Audio -> DLS)
+6. rename the file to `GM.DLS` (has to be all caps)
+7. put the file in `C:\windows\SysWoW64\drivers\`, replacing the existing file if necessary (I recommend renaming the original to avoid losing it first)
+8. Open DirectMusic Producer
+9. In the top left corner there's a MIDI port icon, click it.
+10. Set number of Voices to 999
+11. Set sample rate to 44,1kHz or higher
+12. Make sure that "Microsoft Synthesizer" is selected
+13. Create a new project 
+14. Right click, import file as
+15. import a MIDI of your choice.
+16. Play it. Voila! 
+17. If the reverb is too much, in the top left corner there's a selector that allows you to disable it.
